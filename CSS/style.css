@@ -7,19 +7,69 @@
 html,body{
     overflow-x: hidden;
     height: 100vh;
+    background-color: #555555;
+    scroll-behavior: smooth;
 }
 
 .margin{
     border: 1px solid red;
 }
 
+h1{
+    color: aliceblue;
+    font-weight: 500;
+}
+
+#img-gerada{
+    height: 100vh;
+    background-color: aliceblue;
+    text-align: center;
+}
+
 #home{
-    background-image: url("../img/Auau.jpeg");
-    background-size: cover;
     text-align: center;
     height: 100vh;
 }
-#home h1{
-    font-size: 1.2rem;
-    font-weight: 500;
+
+#home #frase-gerada{
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 0.4;
+    color: aliceblue;
+}
+.btn-custom{
+    border: 2px solid aliceblue;
+    border-radius: 30px;
+    color:aliceblue ;
+    width: 200px;
+    height: 50px;
+}
+.btn-custom:hover{
+    color: #555555;
+    background-color: aliceblue;
+}
+#categoria{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid aliceblue;
+    color: #555555;
+    background-color: aliceblue;
+}
+
+#categoria:hover{
+    background-color: #555555;
+    border: 2px solid aliceblue;
+    color: aliceblue;
+
+}
+.icon-next{
+    border-radius: 40px;
+    border: 2px solid aliceblue;
+    padding: 10px;
+    transform: rotate(90deg);
+}
+.icon-next:hover{
+    background: aliceblue;
+    color: #555555;
 }

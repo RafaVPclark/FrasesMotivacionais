@@ -12,22 +12,47 @@
   <body>
     <section id="home" class="d-flex">
         <div class="container align-self-center">
-            <div class="row">
+            <div class="row pb-5">
+                <h1 class="mb-3">Frase Gerada...</h1>
                 <div class="col-12">
-                    <h1 id="frase-gerada">Frase gerada....</h1>
+                    <h1 id="frase-gerada"></h1>
                 </div>
-                <div class="col-6 mx-auto mt-5">
-                    <select id="categoria" class="form-select form-select-lg mb-3" aria-label="Large select example">
-                        <option selected>Selecione uma opção</option>
-                        <option value="1">Coragem</option>
-                        <option value="2">Fitness</option>
-                        <option value="3">Humor</option>
-                        <option value="4">Inspiracional</option>
-                      </select>
-                      <button onclick="obterCitacaoSelecionada()" class="btn btn-success">Obter Citação</button>
+                <div class="col-12 col-md-6 mx-auto mt-5">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <select id="categoria" class="form-select form-select-lg mb-3 mx-auto" aria-label="Large select example">
+                          <option selected>Selecione...</option>
+                          <option value="1">Coragem</option>
+                          <option value="2">Fitness</option>
+                          <option value="3">Humor</option>
+                          <option value="4">Inspiracional</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <button onclick="obterCitacaoSelecionada()" class="btn btn-outline btn-custom mx-auto">Obter Citação</button>
+                    </div>
+                  </div>
                 </div>
             </div>
+            <div class="row">
+              <div class="col-4 mx-auto">
+                <button class="btn icon-next" >
+                  <a href="#img-gerada">
+                    <img src="icons/next-light-svgrepo-com.svg" class="mx-auto" width="30px" alt="">
+                  </a>
+                </button>
+              </div>
+            </div>
         </div>
+    </section>
+    <section id="img-gerada" class="d-flex">
+      <div class="container align-self-center">
+        <div class="row">
+          <div class="col-10 col-md-8 mx-auto"> 
+            <img src="" id="img-blob" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Javascript pessoal -->
     <script src="js/script.js"></script>
